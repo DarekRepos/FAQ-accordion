@@ -28,6 +28,9 @@ jobs:
 
       - name: Run npm build
         run: npm run build:prod
+        
+      - name: check current path
+        run: ls
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
