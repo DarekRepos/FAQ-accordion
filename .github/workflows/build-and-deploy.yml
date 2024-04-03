@@ -16,7 +16,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Go to project folder
-        run: cd FAQ-component
+        run: |
+             cd FAQ-component
+             ls
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
