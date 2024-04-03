@@ -7,6 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./FAQ-component
 
     strategy:
       matrix:
@@ -15,25 +18,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Go to project folder
-        run: |
-             cd FAQ-component
-             ls
-
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
 
       - name: Install packages
-        working-directory: ./FAQ-component
         run: npm ci
 
       - name: Run npm build
-        working-directory: ./FAQ-component
         run: npm run build:prod
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./public
