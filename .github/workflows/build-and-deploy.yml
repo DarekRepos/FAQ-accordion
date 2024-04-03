@@ -26,9 +26,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install packages
+        working-directory: ./FAQ-component
         run: npm ci
 
       - name: Run npm build
+        working-directory: ./FAQ-component
         run: npm run build:prod
 
       - name: Deploy to gh-pages
