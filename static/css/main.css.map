@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../../src/static/scss/main.scss"],"names":[],"mappings":"AAAA,GACE,aACA,yBACA,kBACA","file":"main.css"}
+{"version":3,"sourceRoot":"","sources":["../../../src/static/scss/components/_faq.scss","../../../src/static/scss/base/_reset.scss"],"names":[],"mappings":"AAAA,GACI,UCEJ,6BAII,aAMJ,oBAOI,yBAIJ,WAII,SAGJ,MAEI,SACA,UAGJ,GACI,gBAGJ,GACI,mBAGJ,KACI,SACA,8BAGJ,EACI,qBAMJ,KACI,sBAGJ,mBAGI","file":"main.css"}
