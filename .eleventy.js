@@ -1,13 +1,19 @@
+const Faq = require('./src/_includes/components/Faq');
+
 module.exports = function (eleventyConfig) {
     eleventyConfig.setBrowserSyncConfig({
         files: './public/static/**/*.css',
     });
     eleventyConfig.addPassthroughCopy("src/assets/");
+    eleventyConfig.addPassthroughCopy("src/_data");
+    eleventyConfig.addShortcode("Faq", Faq);
 
     return {
         dir: {
             input: 'src',
+            includes: '_includes',
             output: 'public',
+            data: "_data"
         },
         templateFormats: ['md', 'njk', 'html'],
         markdownTemplateEngine: 'njk',
