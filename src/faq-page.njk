@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+permalink: /faq/
+title: "Faq accordion"
+---
+
+<h1>FAQ</h1>
+<section class="faq">
+    <h2>FAQ</h2>
+    {% for faq in faqs %}
+        {% Faq question=faq.question, answer=faq.answer %}
+    {% endfor%}
+</section>
