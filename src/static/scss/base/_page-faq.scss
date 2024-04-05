@@ -1,0 +1,63 @@
+@use '../utils' as u;
+@use '../mixins' as r;
+
+
+main {
+    display: grid;
+    grid-template-columns: auto u.rem(327) auto;
+    grid-template-rows: u.rem(143) auto auto 1fr;
+    @include r.media-up('sm') {
+        grid-template-columns: auto u.rem(720) auto;
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+
+    h1 {
+        padding-inline-start: 2rem;
+        font-size: var(--f-l);
+        font-weight: var(--w-bold);
+        @include r.media-up('sm') {
+
+        }
+    }
+}
+
+.icon__star {
+    transform: scale(0.6);
+}
+
+.faq {
+    background-color: var(--c-white);
+    display: block;
+    padding-inline: 1.5rem;
+    padding-block-start: 2rem;
+    color: var(--c-dark-purple);
+    border-radius: 0.5rem;
+    @include r.media-up('sm') {
+        padding-inline: 2.5rem;    }
+
+}
+
+.picture-header {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+        background-image: url(/assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        height: clamp(u.rem(232), 12.56338028169014rem + 8.262910798122066vw, u.rem(320));
+        background-size: cover;
+
+        @include r.media-up('sm') {
+            background-image: url(/assets/images/background-pattern-desktop.svg);
+
+        }
+    }
