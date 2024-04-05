@@ -1,2 +1,9 @@
 @use '../utils' as u;
 @use '../mixins' as r;
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: var(--w-regural);
+    background-color: var(--c-light-pink);
+
+}
