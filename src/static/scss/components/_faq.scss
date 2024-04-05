@@ -1,3 +1,66 @@
-h1{
-    color:red;
+@use '../utils' as u;
+@use '../mixins' as r;
+
+
+summary {
+    display: grid;
+    grid-template-columns: auto 2rem;
+    column-gap: 2rem;
+    font-size: var(--f-m);
+    font-weight: var(--w-semibold);
+    align-items: center;
+
+}
+
+summary:hover {
+    color: #AD28EB;
+}
+
+details {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-block: u.rem(22) u.rem(22);
+    border-collapse: collapse;
+    border-style: hidden;
+
+    @include r.media-up('sm') {
+        padding-block: u.rem(16) u.rem(16);
+    }
+
+    p {
+        font-size: var(--f-s);
+        font-weight: var(--w-regular);
+        line-height: 1.5;
+        padding-block-start: 1.5rem;
+        padding-inline-end: 1rem;
+        color: var(--c-grayish-purple);
+
+        @include r.media-up('sm') {
+            padding-block-start: 1rem;
+        }
+    }
+}
+
+details:not(:last-child) {
+    border-bottom: 1px var(--c-light-pink) solid;
+}
+
+
+details>summary {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+details[open] {
+    transition:  all ease-in-out 2.5s;
+}
+
+details>summary::after {
+    content: url('/assets/images/icon-plus.svg');
+}
+
+
+details[open]>summary::after {
+    content: url('/assets/images/icon-minus.svg');
 }
