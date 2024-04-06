@@ -31,11 +31,11 @@ Users should be able to:
 
 desktop view
 
-<img alt="desktop view screenshot" src="./docs/screenshots/desktop.png" width="700" height="400">
+<img alt="desktop view screenshot" src="./docs/screenshots/desktop.png" width="600" height="320">
 
 mobile view
 
-<img alt="mobile view screenshot" src="./docs/screenshots/mobile.png" width="300" height="500">
+<img alt="mobile view screenshot" src="./docs/screenshots/mobile.png" width="300" height="600">
 
 
 ### Links
