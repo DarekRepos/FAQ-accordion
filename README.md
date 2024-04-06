@@ -60,7 +60,7 @@ mobile view
 
 ### What I learned
 
-I learned how to set up an Eleventy project from scratch. I improved my use of grid and flexbox, but I'd like to work on more projects to become more confident with these box layout. I also learned about accessibility best practices for decorative elements.
+I learned how to set up an Eleventy project from scratch. I improved my use of grid and flexbox, but I'd like to work on more projects to become more confident with these box layout. I also learned about accessibility best practices for decorative elements. I learned more about sass variables and learned how to use basic components with javascript and nunjucks.
 
 ### Continued development
 
