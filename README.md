@@ -41,7 +41,7 @@ mobile view
 ### Links
 
 - Solution URL: [solution URL here](https://your-solution-url.com)
-- Live Site URL: [live site URL here](https://darekrepos.github.io/FAQ-accordion/faq)
+- Live Site URL: [live site URL here](https://darekrepos.github.io/FAQ-accordion/faq-page)
 
 ## My process
 
