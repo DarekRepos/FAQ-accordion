@@ -23,6 +23,6 @@ module.exports = function (eleventyConfig) {
         markdownTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',
         dataTemplateEngine: 'njk',
-        //pathPrefix: '/FAQ-accordion/',
+        pathPrefix: '/FAQ-accordion/',
     };
 };
