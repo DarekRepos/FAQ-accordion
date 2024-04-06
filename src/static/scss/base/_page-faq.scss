@@ -7,7 +7,7 @@ main {
     grid-template-columns: auto u.rem(327) auto;
     grid-template-rows: u.rem(143) auto auto 1fr;
     @include r.media-up('sm') {
-        grid-template-columns: auto u.rem(720) auto;
+        grid-template-columns: auto u.rem(628) auto;
     }
 }
 
@@ -19,7 +19,7 @@ main {
 
 .container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
 
     h1 {
@@ -34,6 +34,9 @@ main {
 
 .icon__star {
     transform: scale(0.6);
+    @include r.media-up('sm') {
+        transform: scale(1);
+    }
 }
 
 .faq {
