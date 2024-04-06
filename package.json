@@ -11,7 +11,7 @@
     "start": "npm run watch:eleventy & npm run watch:sass",
     "build": "npm run build:eleventy & npm run build:sass",
     "build:sass:prod": "sass src/static/scss:public/static/css --style compressed",
-    "build:eleventy:prod": "ELEVENTY_ENV=production eleventy",
+    "build:eleventy:prod": "ELEVENTY_ENV=production eleventy --pathprefix=FAQ-accordion",
     "build:prod": "npm run build:eleventy:prod & npm run build:sass:prod"
   },
   "keywords": [],
