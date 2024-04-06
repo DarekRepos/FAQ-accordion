@@ -1,6 +1,10 @@
 const Faq = require('./src/_includes/components/Faq');
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function (eleventyConfig) {
+
+    eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+    
     eleventyConfig.setBrowserSyncConfig({
         files: './public/static/**/*.css',
     });
@@ -19,5 +23,6 @@ module.exports = function (eleventyConfig) {
         markdownTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',
         dataTemplateEngine: 'njk',
+        pathPrefix: '/FAQ-accordion/',
     };
 };
