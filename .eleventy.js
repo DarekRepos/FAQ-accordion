@@ -11,7 +11,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets/");
     eleventyConfig.addPassthroughCopy("src/_data");
     eleventyConfig.addPassthroughCopy({ "src/assets/images/favicon-32x32.png": "/" });
-    eleventyConfig.addPassthroughCopy({ "src/assets/images/favicon-32x32.png": "/faq-page/" });
+    eleventyConfig.addPassthroughCopy({ "src/assets/images/favicon-32x32.png": "/faq/" });
     eleventyConfig.addShortcode("Faq", Faq);
 
     return {
