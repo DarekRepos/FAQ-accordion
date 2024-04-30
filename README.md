@@ -48,23 +48,22 @@ mobile view
 
 Prerequisites:
 
-Node.js and npm (or yarn): Download and install Node.js (https://nodejs.org/en) as it includes npm (Node Package Manager). Alternatively, you can use a package manager like yarn (https://classic.yarnpkg.com/lang/en/docs/install/).
+Node.js and npm (or yarn): Download and install [Node.js](https://nodejs.org/en) as it includes npm (Node Package Manager). Alternatively, you can use a package manager like [yarn](https://classic.yarnpkg.com/lang/en/docs/install/).
 
 Steps:
 
-- Clone or Download the Project:
+1. Clone or Download the Project:
 
-If you have Git installed, clone the repository using the following command (replace https://github.com/your-username/faq-component.git with the actual repository URL):
-Bash
+If you have Git installed, clone the repository using the following command
 
         
-        git clone https://github.com/your-username/faq-component.git
+        git clone https://github.com/DarekRepos/FAQ-accordion.git
         
         
 
-If you don't have Git or prefer a manual download, download the project's ZIP file from the source (if available) and extract it to a folder on your computer.
+If you don't have Git or prefer a manual download, download the project's ZIP file from the source (if available) and extract it to a folder on your computer. You can also use ssh.
 
-Install Dependencies:
+2. Install Dependencies:
 
 - Navigate to the project directory using your terminal or command prompt.
 
@@ -76,18 +75,18 @@ Install Dependencies:
 
 (If you're using yarn, use yarn install instead.)
 
-Start the Development Server:
+3. Start the Development Server:
 
 - Run the development script using npm:
 
    
     npm run start
  
-This will typically start a local server (usually at http://localhost:8080 or a similar address). The exact port number might vary depending on your system configuration or other running processes.
+This will typically start a local server (usually at `http://localhost:8080` or a similar address). The exact port number might vary depending on your system configuration or other running processes.
 
-- Open the Project in Your Browser:
+4. Open the Project in Your Browser:
         
-Open your web browser and navigate to the URL displayed in the terminal output after running npm run start. This will usually be http://localhost:8080 (or the specific port used).
+Open your web browser and navigate to the URL displayed in the terminal output after running npm run start. This will usually be `http://localhost:8080` (or the specific port used).
 
 
 
