@@ -1,0 +1,18 @@
+.attribution {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    inline-size: 100%;
+    block-size: 2rem;
+    display: grid;
+    place-items: center;
+    font-size: var(--f-s);
+    &__link {
+      color: var(--c-dark-purple);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+}
