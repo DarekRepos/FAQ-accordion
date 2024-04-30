@@ -8,6 +8,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
+  - [How to run localy](#how-to-run)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -42,6 +43,55 @@ mobile view
 
 - Solution URL: [solution URL here](https://your-solution-url.com)
 - Live Site URL: [live site URL here](https://darekrepos.github.io/FAQ-accordion/faq-page)
+
+### How to run
+
+Prerequisites:
+
+    Node.js and npm (or yarn): Download and install Node.js (https://nodejs.org/en) as it includes npm (Node Package Manager). Alternatively, you can use a package manager like yarn (https://classic.yarnpkg.com/lang/en/docs/install/).
+
+Steps:
+
+    Clone or Download the Project:
+
+        If you have Git installed, clone the repository using the following command (replace https://github.com/your-username/faq-component.git with the actual repository URL):
+        Bash
+
+        ```  
+        git clone https://github.com/your-username/faq-component.git
+        ```
+        
+
+    If you don't have Git or prefer a manual download, download the project's ZIP file from the source (if available) and extract it to a folder on your computer.
+
+Install Dependencies:
+
+    Navigate to the project directory using your terminal or command prompt.
+
+    Run the following command to install the required dependencies listed in the package.json file:
+    Bash
+
+    ```
+    npm install
+    ```
+
+    (If you're using yarn, use yarn install instead.)
+
+Start the Development Server:
+
+    - Run the development script using npm:
+
+    ```
+    npm run start
+    ```
+
+    This will typically start a local server (usually at http://localhost:8080 or a similar address). The exact port number might vary depending on your system configuration or other running processes.
+
+    - Open the Project in Your Browser:
+        
+      Open your web browser and navigate to the URL displayed in the terminal output after running npm run start. This will usually be http://localhost:8080 (or the specific port used).
+
+
 
 ## My process
 
