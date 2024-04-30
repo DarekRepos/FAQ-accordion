@@ -64,16 +64,14 @@
     <p>
         Challenge by
         <a class="attribution__link" href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa" target="_blank" rel="noopener noreferrer">Frontend
-                      Mentor</a>. Coded by
+                                  Mentor</a>. Coded by
         <a class="attribution__link" href="https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz" target="_blank" rel="noopener noreferrer">DarekRepos</a>.
     </p>
 </footer>
 <script>
     const firstDetails = document.querySelector("#faq-elements details"); // Select first details
-    function openFirstFAQ() {
-        firstDetails.setAttribute('open', 'true');
-    }
-    document.addEventListener('DOMContentLoaded', function () {
+    const openFirstFAQ = () => firstDetails.open = true;
+    document.addEventListener('DOMContentLoaded', () => {
         openFirstFAQ();
     }, false);
 </script>
