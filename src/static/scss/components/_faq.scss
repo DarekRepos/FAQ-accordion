@@ -12,8 +12,13 @@ summary {
 }
 
 summary:hover {
-    color: #AD28EB;
+    color: var(--c-violet) ;
 }
+summary:focus { 
+    box-shadow: none; 
+    outline: var(--c-violet) dotted 2px;   
+    outline-offset: .05em; 
+ }
 
 details {
     display: flex;
