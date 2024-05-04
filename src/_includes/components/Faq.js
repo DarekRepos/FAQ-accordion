@@ -2,7 +2,7 @@ const { html } = require('common-tags');
 
 function Faq({ question, answer }) {
   return html`
-      <details>
+      <details class="faq-item">
         <summary>${question}</summary>
         <div>
         <p>${answer}</p>

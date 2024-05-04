@@ -55,3 +55,31 @@ title: Faq accordion
         openFirstFAQ();
     }, false);
 </script>
+<script>
+    const faqsContainer = document.getElementById('faq-elements');
+    const faqs = faqsContainer.querySelectorAll('.faq-item');
+    faqsContainer.addEventListener('keydown', (e) => {
+        const key = e.key;
+        const currentFaq = document.activeElement ?. closest('.faq-item');
+        const currentIndex = Array.from(faqs).indexOf(currentFaq);
+        if (! faqs.length || currentIndex === -1) 
+            return;
+        
+        let nextIndex;
+        switch (key) {
+            case 'ArrowDown': nextIndex = (currentIndex + 1) % faqs.length;
+                break;
+            case 'ArrowUp':
+            case 'Shift+Tab': nextIndex = (currentIndex - 1 + faqs.length) % faqs.length;
+                break;
+            case 'Home': nextIndex = 0;
+                break;
+            case 'End': nextIndex = faqs.length - 1;
+                break;
+            default:
+                return;
+        }
+        const nextFaq = faqs[nextIndex];
+        nextFaq.querySelector('summary').focus();
+    });
+</script>
